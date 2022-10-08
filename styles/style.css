@@ -8,8 +8,9 @@ body{
 
 }
 .categories{
-    max-width: 350px;
+    max-width: 300px;
     margin: auto;
+    text-align: center;
 }
 .top-categories{
    
@@ -29,7 +30,7 @@ body{
 .fa-ice-cream{
     color: #ff6c7f;
 }
-.card{
+.card-red, .card-green, .card-blue{
     width: 300px;
     margin: auto;
     background-color: #ffa8b4;
@@ -40,23 +41,50 @@ body{
     letter-spacing: 1.5px;
     font-size: 1.1rem;
     padding-bottom: 30px;
+}
 
+.card-red{
+    background-color: #ff7c8e;
+} 
 
+.card-green{
+    background-color: #99d3ab;
+} 
+
+.card-blue{
+    background-color: #9ecbdd;
 }
 
 .card-wrap{
     display: flex;
+    gap: 60px;
+    padding-top: 85px;
 }
-.circle-top{
-    height: 160px;
-    width: 160px;
-    background-color: #ff6c7f;
+
+.circle-top-green, .circle-top-blue, .circle-top-red {
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     position: absolute;
-    top: -50px;
-    left: 27%;
+    top: -70px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.circle-top-green{
+    background-color: #81c797;
+}
+
+.circle-top-blue{
+    background-color: #89b8cb;
+}
+
+.circle-top-red{
+    background-color: #ff6c7f;
     
 }
+
 .card-content{
     padding:150px 20px 20px 20px ;
 }
