@@ -139,26 +139,24 @@ transition: all 0.5s ease;
 }
 
 .bottom-nav{
-
     z-index: 2;
     bottom: 0;
     position: absolute;
-
 }
-
 
 /* For the slide */
 .slide {
     width: 100%;
     height: auto;
-    /* display: flex; */
     justify-content: center;
     position: relative;
+    background-color: #ffb9c3;
 }
 
 .slide img {
     width: 100%;
     /* z-index: -2; */
+    margin-top: 65px;
 }
 
 #left, #right{
@@ -296,6 +294,44 @@ transition: all 0.5s ease;
     padding: 50px;
 }
 
+/* FOOTER */
+
+footer{
+    background-color: #191919;
+}
+
+.wraper{
+    color: white;
+    text-align: center;
+}
+
+.footer-newstaller{
+    text-align: center;
+}
+
+
+
+.newstaller .email{
+    padding: 3px 90px 3px 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.footer-logo img{
+    margin: 20px;
+}
+
+.ok-buttom{
+    padding: 5px 8px;
+    border-radius: 15px;
+    background-color: #ff9dac;
+    color: white;
+    border: none;
+}
+
+
+
+
 @media only screen and (min-width: 768px){
     .display-mobile {
         display: block;
@@ -304,7 +340,7 @@ transition: all 0.5s ease;
     .cards-continer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 900px;
+        max-width: 780px;
         margin: auto;
     }
      
