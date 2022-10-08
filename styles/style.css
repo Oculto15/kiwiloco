@@ -9,6 +9,7 @@ body{
 }
 .categories{
     max-width: 350px;
+    margin: auto;
 }
 .top-categories{
    
@@ -29,7 +30,7 @@ body{
     color: #ff6c7f;
 }
 .card{
-    width: 100%;
+    width: 300px;
     margin: auto;
     background-color: #ffa8b4;
     position: relative;
