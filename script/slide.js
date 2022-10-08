@@ -3,7 +3,7 @@ const rightBtn = document.getElementById('right');
 const leftBtn = document.getElementById('left');
 
 // Images are from unsplash
-let pictures = ['../images/background-pink.png','../images/background-teal.svg'];
+let pictures = ['../images/background-pink.svg','../images/background-teal.svg'];
 
 img.src = pictures[0];
 let position = 0;
