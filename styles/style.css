@@ -555,11 +555,18 @@ footer{
     .social-media{
         display: none;
     }
+    .exclusive-offer{
+        display: none;
+    }
 }
 
 @media(max-width: 819px){
     .logo{
         max-width: 160px;
+    }
+
+    .exclusive-offer{
+        display: none;
     }
     .burger-menu{
         display: block;
