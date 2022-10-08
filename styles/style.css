@@ -391,6 +391,12 @@ footer{
         height: 100px;
     }
 
+    .slide img {
+        position:none; 
+        margin: 0 ; 
+
+    }
+
 }
 
 /* Media Queries Navbar */
