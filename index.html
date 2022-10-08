@@ -1,106 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Kiwi Loco</title>
-  </head>
 
-  <body>
-    <!-- nav bar -->
-    <header>
-      <div class="container">
-        <div class="subcontainer">
-          <nav class="navbar">
-            <div class="logo"></div>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Kiwi Loco</title>
+</head>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Products</a>
-              </li>
+<body>
+  <!-- nav bar -->
+  <header>
+    <div class="container">
+      <div class="subcontainer">
+        <nav class="navbar">
+          <div class="logo"></div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="" class="nav-link">Home</a>
+            </li>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Locations</a>
-              </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Products</a>
+            </li>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Contact Us</a>
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a href="" class="nav-link">Locations</a>
+            </li>
 
-            <div class="social-media"></div>
-            <div class="burger-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
-        </div>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="social-media"></div>
+          <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- slideshow -->
-      <div class="slide">
-        <button id="left-btn" class="prev btn">&larr;</button>
-        <img id="carousel" src="" alt="" />
-        <button id="right-btn" class="next btn">&rarr;</button>
+  <main>
+    <!-- slideshow -->
+    <div class="slide">
+      <button id="left-btn" class="prev btn">&larr;</button>
+      <img id="carousel" src="" alt="" />
+      <button id="right-btn" class="next btn">&rarr;</button>
+    </div>
+    <!-- Top Categories -->
+    <div>
+      <div>
+        <h2>Top Categories</h2>
       </div>
-
-      <!-- main products -->
       <div class="categories">
-        <div class="cards-products"></div>
-        <div class="cards-products"></div>
-        <div class="cards-products"></div>
-      </div>
-    </main>
-
-    <!-- display different products by clicking icon -->
-    <section class="trending-product">
-      <div class="container">
-        <div class="cards-continer">
-          <div class="conteiner-1">
-            <div class="section-division">
-              <div class="image1"></div>
-              <div class="description1"></div>
-            </div>
-            <div class="section-division">
-              <div class="image2"></div>
-              <div class="description2"></div>
-            </div>
-            <div class="section-division">
-              <div class="image3"></div>
-              <div class="description3"></div>
-            </div>
+        <div class="columns">
+          <div class="categorie">
+            <img src="images/yogurt.jpg" alt="yogurt">
           </div>
+          <ul class="price special" id="pricenp">
+            <li class="membershipHeader" id="yogurt">Yogurt</li>
+            <li>Business Listed on Directoy</li>
+            <li>Chocalte</li>
+            <li>Dole Whip</li>
+            <li>Swirl</li>
+            <li class="membershipHeader"><a href=""></a> View All</li>
+          </ul>
+        </div>
 
-          <div class="conteiner-2">
-            <div class="section-division">
-              <div class="image4"></div>
-              <div class="description4"></div>
-            </div>
-            <div class="section-division">
-              <div class="image5"></div>
-              <div class="description5"></div>
-            </div>
-            <div class="section-division">
-              <div class="image6">
-                <img src="./images/boba.png" alt="" />
-              </div>
-              <div class="description6"></div>
-            </div>
+        <div class="columns">
+          <div class="categorie">
+            <img src="images/boba.jpg" alt="boba">
           </div>
+          <ul class="price" id="boba">
+            <li class="membershipHeader" id="bronze">Boba</li>
+            <li>Taro</li>
+            <li>Sour Apple</li>
+            <li>Macha</li>
+            <li>Watermelon</li>
+            <li class="membershipHeader"><a href=""></a> View All</li>
+          </ul>
+        </div>
 
-          <div class="conteiner-3"></div>
+        <div class="columns">
+          <div class="categorie">
+            <img src="images/shake.jpg" alt="shakes">
+          </div>
+          <ul class="price" id="shake">
+            <li class="membershipHeader" id="silver">Shakes</li>
+            <li>Peach</li>
+            <li>Chocolate</li>
+            <li>Strawberry</li>
+            <li>Huckleberry</li>
+            <li class="membershipHeader"><a href=""></a> View All</li>
+          </ul>
         </div>
       </div>
-    </section>
-    <footer></footer>
-    <script src="script/slide.js"></script>
-  </body>
+
+    </div>
+
+    <!-- main products -->
+    <div class="categories">
+      <div class="cards-products"></div>
+      <div class="cards-products"></div>
+      <div class="cards-products"></div>
+    </div>
+  </main>
+
+  <!-- display different products by clicking icon -->
+  <section class="trending-product">
+    <div class="container">
+      <div class="cards-continer">
+        <div class="conteiner-1">
+          <div class="section-division">
+            <div class="image1"></div>
+            <div class="description1"></div>
+          </div>
+          <div class="section-division">
+            <div class="image2"></div>
+            <div class="description2"></div>
+          </div>
+          <div class="section-division">
+            <div class="image3"></div>
+            <div class="description3"></div>
+          </div>
+        </div>
+
+        <div class="conteiner-2">
+          <div class="section-division">
+            <div class="image4"></div>
+            <div class="description4"></div>
+          </div>
+          <div class="section-division">
+            <div class="image5"></div>
+            <div class="description5"></div>
+          </div>
+          <div class="section-division">
+            <div class="image6">
+              <img src="./images/boba.png" alt="" />
+            </div>
+            <div class="description6"></div>
+          </div>
+        </div>
+
+        <div class="conteiner-3"></div>
+      </div>
+    </div>
+  </section>
+  <footer></footer>
+  <script src="script/slide.js"></script>
+</body>
+
 </html>

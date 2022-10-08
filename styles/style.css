@@ -94,7 +94,7 @@ a {
     border: 2px solid black;
     background: transparent;
     background-position: bottom left;
-    transition: all .3s ease-out;
+    transition: .3s ease-out;
     border-radius: 50%;
 }
 
@@ -123,6 +123,57 @@ a {
     margin: auto -7em auto 0;
 }
 
+/* For the Top Categories */
+
+.categories {
+    display: flex;
+}
+
+.columns {
+    float: left;
+    width: 90%;
+    max-width: 720px;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #0D3B66;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.price li {
+    padding: 5px;
+    text-align: center;
+    min-height: 2rem;
+}
+
+li label {
+    text-align: center;
+}
+
+.price .grey {
+    color: #f8f8f8;
+    background-color: #0D3B66;
+    font-size: 20px;
+}
+
+.membershipHeader {
+    background-color: #B5610D;
+    color: black;
+    font-size: 25px;
+}
+
+.categorie img {
+    width: 100%;
+}
 
 
 /* Media Queries Navbar */
