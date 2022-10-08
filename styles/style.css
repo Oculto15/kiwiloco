@@ -78,11 +78,11 @@ a {
     cursor: pointer;
     padding: 3em;
     display: flex;
-    color: white;
+    color: black;
 }
 
 .prev {
-    border: 5px solid white;
+    border: 5px solid black;
     background: transparent;
     background-position: bottom right;
     transition: all .3s ease-out;
@@ -91,7 +91,7 @@ a {
 
 .next {
     right: 0;
-    border: 5px solid white;
+    border: 5px solid black;
     background: transparent;
     background-position: bottom left;
     transition: all .3s ease-out;
@@ -112,6 +112,15 @@ a {
     background-size: 200% 100%;
     background-position: bottom right;
     color: #fff;
+}
+
+#right-btn {
+    margin: auto 0 auto -2em;
+}
+
+#left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
 }
 
 
