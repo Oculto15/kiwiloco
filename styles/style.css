@@ -59,10 +59,55 @@ i{
 i:hover{
     transform: rotate(180deg);
 }
+/* submenu Pc size */
 
-.menu-inside{
+.submenu{
+    position: absolute;
     background-color: aliceblue;
-    height: 100px;
+    left: 660px;
+    height: 0px;
+    width: 150px;
+    top:125px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+.submenu2{
+    position: absolute;
+    background-color: rgb(240, 255, 250);
+    left: 860px;
+    height: 220px;
+    width: 150px;
+    top:125px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+.submenu3{
+    position: absolute;
+    background-color: rgb(41, 133, 212);
+    right: 460px;
+    height: 220px;
+    width: 150px;
+    top:125px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+.submenu.open{
+max-height: 150px;
+top: 125px;
+
+}
+.submenu-item{
+    list-style: none;
+    
+}
+.submenu-item:nth-child(1){
+border-top:3.5px solid #fa5b70;
+}
+.submenu-link{
+    color: rgb(131, 130, 130);
 }
 .logo img{
     max-width:200px;
