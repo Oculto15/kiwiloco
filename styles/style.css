@@ -61,28 +61,28 @@ a {
 }
 
 /* For the slide */
-.container {
+.slide {
     width: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     height: auto;
     display: flex;
     justify-content: center;
 }
 
-.container img {
+.slide img {
     width: 100%;
     z-index: -2;
 }
 
 .btn {
     cursor: pointer;
-    padding: 3em;
+    padding: 1.5em;
     display: flex;
     color: black;
 }
 
 .prev {
-    border: 5px solid black;
+    border: 2px solid black;
     background: transparent;
     background-position: bottom right;
     transition: all .3s ease-out;
@@ -91,7 +91,7 @@ a {
 
 .next {
     right: 0;
-    border: 5px solid black;
+    border: 2px solid black;
     background: transparent;
     background-position: bottom left;
     transition: all .3s ease-out;
@@ -99,7 +99,7 @@ a {
 }
 
 .prev:hover {
-    border: 5px solid #ff9fac;
+    border: 2px solid #ff9fac;
     background: linear-gradient(to right, #ff9fac 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: bottom left;
@@ -107,7 +107,7 @@ a {
 }
 
 .next:hover {
-    border: 5px solid #ff9fac;
+    border: 2px solid #ff9fac;
     background: linear-gradient(to left, #ff9fac 50%, transparent 50%);
     background-size: 200% 100%;
     background-position: bottom right;
@@ -115,12 +115,12 @@ a {
 }
 
 #right-btn {
-    margin: auto 0 auto -2em;
+    margin: auto 0 auto -7em;
 }
 
 #left-btn {
     z-index: 0;
-    margin: auto -2em auto 0;
+    margin: auto -7em auto 0;
 }
 
 
