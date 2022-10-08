@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    height: 4000px;
+    background-color: #9ecbdd;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.container{
+    width: 1600px;
+    margin: auto;
+}
+.subcontainer{
+    width: 95%;
+    margin: auto;
+   padding: 25px;
+}
+
+header {
+    position: fixed;
+  
+   
+    width: 100%;
+    background-color: #52bb7200;
+    transition: all 0.3s ease-in-out;
+}
+header:hover{
+    background-color:#ff9fac ;
+}
+.nav-item{
+    list-style: none;
+    padding: 10px 20px;
+    background-color:#52bb7200;
+    border-radius: 20px;
+     box-shadow: inset 0 0 0 0 #fa5b70;
+    font-weight: 700;
+  transition: all 0.4s ease-in-out;
+ 
+}
+
+.nav-item:hover{
+    background-color: #fa5b70;
+      box-shadow: inset 700px 0 0 0 #fa5b70;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+       margin-right: 10px;
+}
+i{
+    color: aliceblue;
+    transition: all 0.4s ease-in-out;
+}
+i:hover{
+    transform: rotate(180deg);
+}
+
+.menu-inside{
+    background-color: aliceblue;
+    height: 100px;
+}
+.logo img{
+    max-width:200px;
+}
+.navbar{
+    width: 100%;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    gap: 60px;
+}
+
+.burger-menu{
+    display: none;
+    cursor: pointer;
+   
+}
+.bar{
+display: block;
+width:25px ;
+height:3px;
+margin: 5px 0;
+background-color: rgb(253, 253, 253);
+transition: all 0.5s ease;
+}
+.social-media i{
+    color: aliceblue;
+    margin-right: 15px;
+}
+
+/* Media Queries Navbar */
+@media(max-width: 1600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px){
+    .logo{
+        max-width: 160px;
+    }
+    .burger-menu{
+        display: block;
+        margin-left: 30px
+    }
+    .burger-menu.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .burger-menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    .burger-menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+    .nav-menu{
+        right: 28px; 
+         top: 106px;
+        flex-direction: column;
+        background-color: #98dbc6;
+        width: 90%;
+        margin-left:5%;
+        text-align: center;
+        transition: all 0.95s ;
+        position: absolute;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .nav-item{
+        margin:16px 0;
+    }
+    .nav-menu.active{
+        top:106px;
+        left: 0;
+        max-height: 400px;
+      
+        
+        
+    }
+    .social-media{
+        display: none;
+    }
+}
+
