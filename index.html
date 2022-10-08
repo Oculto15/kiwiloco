@@ -1,120 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <title>Kiwi Loco</title>
-  </head>
 
-  <body>
-    <!-- nav bar -->
-    <header>
-      <div class="container">
-        <div class="subcontainer">
-          <nav class="navbar">
-            <div class="logo"></div>
-            <ul class="nav-menu">
-              <li class="nav-item">
-                <a href="" class="nav-link">Home</a>
-              </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>Kiwi Loco</title>
+</head>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Products</a>
-              </li>
+<body>
+  <!-- nav bar -->
+  <header>
+    <!-- <div class="container">
+      <div class="subcontainer">
+        <nav class="navbar">
+          <div class="logo"></div>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="" class="nav-link">Home</a>
+            </li>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Locations</a>
-              </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Products</a>
+            </li>
 
-              <li class="nav-item">
-                <a href="" class="nav-link">Contact Us</a>
-              </li>
-            </ul>
+            <li class="nav-item">
+              <a href="" class="nav-link">Locations</a>
+            </li>
 
-            <div class="social-media"></div>
-            <div class="burger-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
+            <li class="nav-item">
+              <a href="" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="social-media"></div>
+          <div class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </div> -->
+  </header>
+
+  <main>
+    <!-- slideshow -->
+    <div class="showcase">
+      <div class="showcase-left"></div>
+      <div class="showcase-right"></div>
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div class="slider__slides">
+          <div class="slider__slide active"></div>
+          <div class="slider__slide"></div>
+          <div class="slider__slide"></div>
+          <div class="slider__slide"></div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <main>
-      <!-- slideshow -->
-      <div class="showcase">
-        <div class="showcase-left"></div>
-        <div class="showcase-right"></div>
-      </div>
-      <div class="container">
-        <div class="slider">
-          <div class="slider__slides">
-            <div class="slider__slide active"></div>
-            <div class="slider__slide"></div>
-            <div class="slider__slide"></div>
-            <div class="slider__slide"></div>
+    <!-- slideshow -->
+    <div class="showcase">
+      <div class="showcase-left"></div>
+      <div class="showcase-right"></div>
+    </div>
+
+    <!-- main products -->
+    <div class="categories">
+      <div class="cards-products"></div>
+      <div class="cards-products"></div>
+      <div class="cards-products"></div>
+    </div>
+  </main>
+
+  <!-- display different products by clicking icon -->
+  <section class="trending-product">
+    <div class="container">
+      <div class="cards-continer">
+        <div class="conteiner-1 display-mobile">
+          <div class="section-division">
+            <div class="image1" id="boba1-opt">
+              <h4 class="flavor">Rasberry</h4>
+              <img id="circular-img" class="boba-color1" src="./images/boba.png" alt="" width="80" height="80" />
+            </div>
+            <div class="description1 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
+            </div>
+          </div>
+          <div class="section-division">
+            <div class="image2" id="boba2-opt">
+              <h4 class="flavor">Banana</h4>
+              <img id="circular-img" class="boba-color2" src="./images/boba.png" alt="" width="80" height="80" />
+            </div>
+            <div class="description2 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
+            </div>
+          </div>
+          <div class="section-division">
+            <div class="image3" id="boba3-opt">
+              <h4 class="flavor">Strawberry</h4>
+              <img id="circular-img" class="boba-color3" src="./images/boba.png" alt="" width="80" height="80" />
+            </div>
+            <div class="description3 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- slideshow -->
-      <div class="showcase">
-        <div class="showcase-left"></div>
-        <div class="showcase-right"></div>
-      </div>
-
-      <!-- main products -->
-      <div class="categories">
-        <div class="cards-products"></div>
-        <div class="cards-products"></div>
-        <div class="cards-products"></div>
-      </div>
-    </main>
-
-    <!-- display different products by clicking icon -->
-    <section class="trending-product">
-      <div class="container">
-        <div class="cards-continer">
-          <div class="conteiner-1">
-            <div class="section-division">
-              <div class="image1"></div>
-              <div class="description1"></div>
+        <div class="conteiner-2 display-mobile">
+          <div class="section-division flex-direc">
+            <div class="image4" id="boba4-opt">
+              <h4 class="flavor">Blueberry</h4>
+              <img id="circular-img" class="boba-color4" src="./images/boba.png" alt="" width="80" height="80" />
             </div>
-            <div class="section-division">
-              <div class="image2"></div>
-              <div class="description2"></div>
-            </div>
-            <div class="section-division">
-              <div class="image3"></div>
-              <div class="description3"></div>
+            <div class="description4 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
             </div>
           </div>
-
-          <div class="conteiner-2">
-            <div class="section-division">
-              <div class="image4"></div>
-              <div class="description4"></div>
+          <div class="section-division flex-direc">
+            <div class="image5" id="boba5-opt">
+              <h4 class="flavor">Rainbow</h4>
+              <img id="circular-img" class="boba-color5" src="./images/boba.png" alt="" width="80" height="80" />
             </div>
-            <div class="section-division">
-              <div class="image5"></div>
-              <div class="description5"></div>
-            </div>
-            <div class="section-division">
-              <div class="image6">
-                <img src="./images/boba.png" alt="" />
-              </div>
-              <div class="description6"></div>
+           
+            <div class="description5 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
             </div>
           </div>
+          <div class="section-division flex-direc">
+            <div class="image6" id="boba6-opt">
+              <h4 class="flavor">Dreams</h4>
+              <img id="circular-img" class="boba-color6" src="./images/boba.png" alt="" width="80" height="80" />
+             
+            </div>
+            <div class="description6 space-boba text-block">
+              <h4>Full Creamy</h4>
+              <p>Recommend to serve in a highball Add in a served chilled!.</p>
+            </div>
+          </div>
+        </div>
 
-          <div class="conteiner-3"></div>
+        <div class="conteiner-3">
+          <img id="boba1"  src="./images/boba.png" alt="">
+          <img id="boba2" class="initial-none-img" src="./images/boba2.png" alt="" width="300" height="300">
+          <img id="boba3" class="initial-none-img" src="./images/boba3.png" alt="" width="300" height="300">
+          <img id="boba4" class="initial-none-img" src="./images/boba4.png" alt="" width="300" height="300">
+          <img id="boba5" class="initial-none-img" src="./images/boba5.png" alt="" width="300" height="300">
+          <img id="boba6" class="initial-none-img" src="./images/boba6.png" alt="" width="300" height="300">
+          
         </div>
       </div>
-    </section>
-    <footer></footer>
-  </body>
+    </div>
+  </section>
+  <footer></footer>
+
+  <script src="./script/choose-boba.js"></script>
+</body>
+
 </html>
