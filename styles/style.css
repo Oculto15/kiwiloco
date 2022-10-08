@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .container{
     width: 1600px;
     margin: auto;
@@ -143,7 +146,42 @@ transition: all 0.5s ease;
     bottom: 0;
     position: absolute;
 }
+/* Showcase Title */
+.exclusive-offer{
+    /* z-index: 110; */
+    position: absolute;
+    color: white;
+    top: 200px;
+    left: 180px;
+}
+.exclusive-offer h1{
+    font-size: 4rem;
+}
+.save h2{
+    padding: 20px;
+    background-color: #fa5b70;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom:15px ;
+    border-radius: 10px;
+    text-align: center;
+} 
+.btn-learn{
+    padding: 20px;
+    background-color: white;
+    color: #707070;
+    text-transform: uppercase;
+    width: 30%;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all 0.7s ease-in-out;
+}
+.btn-learn:hover{
 
+width: 32%;
+font-weight: bold
+}
 /* For the slide */
 .slide {
     width: 100%;
@@ -151,6 +189,7 @@ transition: all 0.5s ease;
     justify-content: center;
     position: relative;
     background-color: #ffb9c3;
+    position: relative;
 }
 
 .slide img {
