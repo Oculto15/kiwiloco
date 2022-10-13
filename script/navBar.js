@@ -11,23 +11,23 @@ burger.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
-// item1.addEventListener('click', e => {
-//   subMenu1.classList.add('open');
-// });
 
+const navbar = document.getElementById("mynav");
 
-// window.onscroll = function() {
-//     scrollFunction()
-// };
+window.onscroll = function () {
+  if (window.pageYOffset > 200) {
+    navbar.classList.remove('top');
+    if (!scrolled) {
+      navbar.style.transform = 'translateY(-70px)';
+    }
+    setTimeout(function () {
+      navbar.style.transform = 'translateY(0)';
+      scrolled = true;
+    }, 200);
+  } else {
+    navbar.classList.add('top');
+    scrolled = false;
+  }
+};
 
-// function scrollFunction() {
-//     if (document.body.scrollTop < 80 || document.documentElement.scrollTop > 80) {
-//         document.querySelector(".navbar").style.padding = "30px 10px";
-//         document.querySelector(".navbar").style.opacity = "0.5";
-//         document.getElementById("logo").style.fontSize = "25px";
-//     } else {
-//         document.querySelector(".navbar").style.padding = "80px 10px";
-//         document.querySelector(".navbar").style.fontSize = "35px";
-//         document.getElementById("navbar").style.opacity = "1";
-//     }
-// }
+document.getElementById('currentyear').textContent = new Date().getFullYear();

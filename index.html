@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./styles/style.css" />
   <title>Kiwi Loco</title>
 </head>
 
 <body>
   <!-- nav bar -->
-  <header>
+  <header id="mynav">
     <div class="container">
       <div class="subcontainer">
-        <nav class="navbar">
+        <nav class="navbar navbar-fixed-top">
           <div class="logo">
             <img src="./images/logo.png" alt="" />
           </div>
@@ -104,12 +104,19 @@
     <!-- slideshow -->
 
     <div class="slide">
-        <div class="exclusive-offer"><h2>Rexburg Shop</h2>
-      <h1>Enjoy Frozen Yogurt <br>  Everyday</h1>
-    <div class="save"><h2>Buy one Get one Free Tuesdays</h2></div>
-  <div class="btn-learn">learn More</div></div>
-      <img id="carousel" alt="" />
-    
+      <div class="exclusive-offer">
+        <h2>Rexburg Shop</h2>
+        <h1>
+          Enjoy Frozen Yogurt <br />
+          Everyday
+        </h1>
+        <div class="save">
+          <h2>Buy one Get one Free Tuesdays</h2>
+        </div>
+        <div class="btn-learn">learn More</div>
+      </div>
+      <img id="carousel" src="#" alt="" />
+
       <div>
         <i id="left" class="fa-solid fa-arrow-left prev"></i>
       </div>
@@ -144,7 +151,7 @@
           <div class="card-green">
             <div class="circle-top-green"></div>
             <div class="card-content">
-              <h2>Frozen Yogurt</h2>
+              <h2>Boba Drink</h2>
               <i class="fa-solid fa-ellipsis fa-2x"></i>
               <p>Mint Chocolate</p>
               <p>Buttered Pecan</p>
@@ -159,7 +166,7 @@
           <div class="card-blue">
             <div class="circle-top-blue"></div>
             <div class="card-content">
-              <h2>Frozen Yogurt</h2>
+              <h2>Milkshake</h2>
               <i class="fa-solid fa-ellipsis fa-2x"></i>
               <p>Mint Chocolate</p>
               <p>Buttered Pecan</p>
@@ -178,7 +185,6 @@
 
   <!-- display different products by clicking icon -->
   <section class="trending-product">
-
     <h1 class="boba-title">Boba Flavors</h1>
     <div class="container">
       <div class="cards-continer">
@@ -186,7 +192,7 @@
           <div class="section-division">
             <div class="image1" id="boba1-opt">
               <h4 class="flavor">Rasberry</h4>
-              <img id="circular-img" class="boba-color1" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color1 circular-img" src="./images/Boba1.svg" alt="" width="80" height="80" />
             </div>
             <div class="description1 space-boba text-block">
               <h4>Full Creamy</h4>
@@ -198,7 +204,7 @@
           <div class="section-division">
             <div class="image2" id="boba2-opt">
               <h4 class="flavor">Banana</h4>
-              <img id="circular-img" class="boba-color2" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color2 circular-img" src="./images/Boba2.svg" alt="" width="80" height="80" />
             </div>
             <div class="description2 space-boba text-block">
               <h4>Full Creamy</h4>
@@ -210,7 +216,7 @@
           <div class="section-division">
             <div class="image3" id="boba3-opt">
               <h4 class="flavor">Strawberry</h4>
-              <img id="circular-img" class="boba-color3" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color3 circular-img" src="./images/Boba3.svg" alt="" width="80" height="80" />
             </div>
             <div class="description3 space-boba text-block">
               <h4>Full Creamy</h4>
@@ -225,7 +231,7 @@
           <div class="section-division flex-direc">
             <div class="image4" id="boba4-opt">
               <h4 class="flavor">Blueberry</h4>
-              <img id="circular-img" class="boba-color4" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color4 circular-img" src="./images/Boba4.svg" alt="" width="80" height="80" />
             </div>
             <div class="description4 space-boba text-block">
               <h4>Full Creamy</h4>
@@ -237,7 +243,7 @@
           <div class="section-division flex-direc">
             <div class="image5" id="boba5-opt">
               <h4 class="flavor">Rainbow</h4>
-              <img id="circular-img" class="boba-color5" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color5 circular-img" src="./images/Boba6.svg" alt="" width="80" height="80" />
             </div>
 
             <div class="description5 space-boba text-block">
@@ -250,7 +256,7 @@
           <div class="section-division flex-direc">
             <div class="image6" id="boba6-opt">
               <h4 class="flavor">Dreams</h4>
-              <img id="circular-img" class="boba-color6" src="./images/boba.png" alt="" width="80" height="80" />
+              <img class="boba-color6 circular-img" src="./images/Boba5.svg" alt="" width="80" height="80" />
             </div>
             <div class="description6 space-boba text-block">
               <h4>Full Creamy</h4>
@@ -262,36 +268,39 @@
         </div>
 
         <div class="conteiner-3">
-          <img id="boba1" src="./images/boba.png" alt="" />
-          <img id="boba2" class="initial-none-img" src="./images/boba2.png" alt="" width="300" height="300" />
-          <img id="boba3" class="initial-none-img" src="./images/boba3.png" alt="" width="300" height="300" />
-          <img id="boba4" class="initial-none-img" src="./images/boba4.png" alt="" width="300" height="300" />
-          <img id="boba5" class="initial-none-img" src="./images/boba5.png" alt="" width="300" height="300" />
-          <img id="boba6" class="initial-none-img" src="./images/boba6.png" alt="" width="300" height="300" />
+          <img id="boba1" src="./images/Boba1.svg" alt="" width="100" height="200"/>
+          <img id="boba2" class="initial-none-img" src="./images/Boba2.svg" alt="" width="100" height="200" />
+          <img id="boba3" class="initial-none-img" src="./images/Boba3.svg" alt="" width="100" height="200" />
+          <img id="boba4" class="initial-none-img" src="./images/Boba4.svg" alt="" width="100" height="200" />
+          <img id="boba5" class="initial-none-img" src="./images/Boba5.svg" alt="" width="100" height="200" />
+          <img id="boba6" class="initial-none-img" src="./images/Boba6.svg" alt="" width="100" height="200" />
         </div>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="footer-content">
       <div class="footer-conteiner">
         <div class="footer-newstaller">
           <div class="footer-logo"></div>
-            <img src="./images/logo.png" alt="" width="150" height="52">
+          <img src="./images/logo.png" alt="" width="150" height="52" />
           <div class="newstaller">
-            <input class="email" name="email" type="email" value="" placeholder="Your email address">
-            <input class="ok-buttom" name="submitNewsletter" type="submit" value="OK">
+            <input class="email" name="email" type="email" value="" placeholder="Your email address" />
+            <input class="ok-buttom" name="submitNewsletter" type="submit" value="OK" />
           </div>
         </div>
         <div>
           <div class="wraper">
-            <p>Our Company</p>
-            <p>Store Information</p>
-            <p>About Us</p>
+            <p class="footer-text">Our Company</p>
+            <p class="footer-text">Store Information</p>
+            <p class="footer-text">About Us</p>
+          </div>
+          <span class="trans-divide"></span>
+          <div class="copyright">
+            <p>&copy; <span id="currentyear"></span> WiByte</p>
+          </div>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
     </div>
   </footer>
